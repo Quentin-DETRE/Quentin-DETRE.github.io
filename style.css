@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hub {
+    width: 100%;
+    height: 100vh;
+    background: url(./ressources/background.webp) no-repeat center;
+    background-size: cover;
+    font-size: large;
+}
+
+
+
+.nav {
+    display: flex;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.nav button {
+    margin-inline: 50px;
+    margin-block-start: 10%;
+    margin-top: 1%;
+
+    border: none;
+    background: none;
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.nav button:hover {
+    color: #20BC8D;
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 10;
+
+}
+#navbarContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#contactBtn {
+    position:absolute;
+    left: 90vw;
+    top: 1.5vh;
+    text-align: center;
+    width: 150px;
+    height: fit-content;
+    background-color: #20BC8D;
+    border-radius: 0.5em;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.contact:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.name {
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: lighter;
+    font-size: 8em;
+}
+
+.title {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    color: #20BC8D;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: lighter;
+    font-size: 7em;
+
+}
+
+#cadrePhoto {
+    position: inherit;
+    right: 75px;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    border: solid 4px #20BC8D;
+    overflow: hidden;
+    transform: rotate(45deg);
+    border-radius: 1em;
+
+    z-index: 1;
+}
+
+#photo {
+    transform: rotate(-45deg);
+    height: 750px;
+    width: 750px;
+    z-index: 1;
+}
+
+.sectionTitle {
+    font-family: 'Catamaran', sans-serif;
+    margin-left: 75px;
+    padding-top: 3vh;
+    font-size: 6em;
+}
+
+#aPropos h1 {
+    color: #20BC8D;
+}
+
+#cadre {
+    height: 700px;
+    width: 90%;
+    margin-top: -30%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: inherit;
+}
+
+#aPropos h3 {
+    margin-left: 75px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: normal;
+    width: 50%;
+    height: fit-content;
+    font-size: 2em;
+}
+
+#competences {
+    background: #20BC8D;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+#competences h2 {
+    color: white;
+    font-size: 3em;
+    position: relative;
+    left: 75px;
+    width: 100vh;
+    height: auto;
+}
+
+.txtHide {
+    display: block;
+    color:#20BC8D;
+    font-size: 2em;
+    position: relative;
+    width: 30vh;    
+    height: auto;
+}
+
+.imagesComp {
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.imgC:hover + .txtHide{
+    transition: all 0.3s ease;
+    color: white;
+}
+.imgL:hover + .txtHide{
+    transition: all 0.3s ease;
+    color: white;
+}
+#imgKrita:hover + .txtHide{
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.imgContainer {
+    width: 20%;
+    height: 20%;
+}
+
+.imgC{
+    width: 50%;
+    height: auto;
+}
+
+.imgL {
+    width: 50%;
+    height: 50%;
+}
+
+#imgKrita {
+    width: 51%;
+    height: 50%;
+}
+
+.carroussel {
+    position: relative;
+    margin-right: 0;
+    top:5vh;
+    left: 4vw;
+    width: 90%;
+}
+.carousel:hover {
+    box-shadow: 20px 20px #20BC8D;
+    transition: all 0.3s ease;
+}
+
+#carouselCatcatcatcat .carousel-item img {
+    object-fit:fill;
+    object-position: center;
+    height: 50vh;
+    width: 60vw;
+    overflow: hidden;
+}
+
+#carouselDroidsoft .carousel-item img {
+    object-fit:contain;
+    object-position: center;
+    height: 50vh;
+    width: 60vw;
+    overflow: hidden;
+}
+
+#carouselRemindr .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    width: 60vw;
+
+    overflow: hidden;
+}
+
+
+#projets {
+    width: 100%;
+    height: fit-content;
+}
+
+#projets h1 {
+    color: #20BC8D;
+}
+
+
+
+.titleContainer {
+    color: #20BC8D;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+
+.textContainer {
+    font-size: 2em;
+}
+
+
+.descriptionContainer {
+    font-family: 'Catamaran', sans-serif;
+    color: black;
+    padding: 1%;
+    position: relative;
+    width: 38%;
+    margin-top: -20%;
+    left: 55%;
+    border: solid 2px #20BC8D;
+    border-radius: 0.5em;
+}
+
+
+
+.btnToGit {
+    border: none;
+    position: inherit;
+    top:10vh;
+    margin-left: 13%;
+    background: #20BC8D;
+    border-radius: 5em;
+    height: 7%;
+    width: 25%;
+    cursor: pointer;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2.75em;
+    color: white;
+}
+.btnToGitLink {
+    position: relative;
+
+    top: -200px;
+}
+
+.btnToGit:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+footer{
+    background-color: #20BC8D;
+    height: 40vh;
+    margin-top: 10vh;
+}
+footer h1 {
+    color: white;
+}
+footer h3 {
+    margin-left: 75px;
+    margin-top: 1%;
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+}
+#contact {
+    height: 60%;
+    margin-top: -3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.btnContainer {
+    height: 100%;
+    width: 12%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+.btnContainer:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.imgBtn {
+    height: 50%;
+    width: 50%;
+}
