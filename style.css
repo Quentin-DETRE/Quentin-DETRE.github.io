@@ -99,13 +99,13 @@
 
 #cadrePhoto {
     position: inherit;
-    right: 75px;
+    right: 1vw;
     display: flex;
     margin: 0;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 500px;
+    height: 25vw;
+    width: 25vw;
     border: solid 4px #20BC8D;
     overflow: hidden;
     transform: rotate(45deg);
@@ -116,8 +116,10 @@
 
 #photo {
     transform: rotate(-45deg);
-    height: 750px;
-    width: 750px;
+    height: 80vh;
+    width: 80vh;
+    position: inherit;
+    margin-left: 2vw;
     z-index: 1;
 }
 
@@ -133,9 +135,9 @@
 }
 
 #cadre {
-    height: 700px;
+    height: 70vh;
     width: 90%;
-    margin-top: -30%;
+    margin-top: -60vh;
     padding-bottom: 5%;
     display: flex;
     justify-content: end;
@@ -232,26 +234,26 @@
 }
 
 #carouselCatcatcatcat .carousel-item img {
-    object-fit:fill;
+    object-fit:contain;
     object-position: center;
     height: 50vh;
-    width: 60vw;
+
     overflow: hidden;
 }
 
 #carouselDroidsoft .carousel-item img {
     object-fit:contain;
     object-position: center;
-    height: 50vh;
-    width: 60vw;
+    height: 60vh;
+
     overflow: hidden;
 }
 
 #carouselRemindr .carousel-item img {
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     height: 50vh;
-    width: 60vw;
+
 
     overflow: hidden;
 }
@@ -287,7 +289,7 @@
     position: relative;
     width: 38%;
     margin-top: -20%;
-    left: 55%;
+    left: 55vw;
     border: solid 2px #20BC8D;
     border-radius: 0.5em;
 }
@@ -310,8 +312,7 @@
 }
 .btnToGitLink {
     position: relative;
-
-    top: -200px;
+    top: -18vh;
 }
 
 .btnToGit:hover {
